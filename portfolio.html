@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Portfolio — Unique Space Design Studio, Pune</title>
+<meta name="description" content="Explore luxury residential and commercial interior projects by Unique Space Design Studio in Dhanori, Lohegaon and across Pune.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* ── Filter Bar ── */
+.filter-bar { display:flex; align-items:center; justify-content:space-between; margin-bottom:48px; flex-wrap:wrap; gap:16px; }
+.filter-lbl { font-size:.6rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); }
+.filter-btns { display:flex; gap:4px; flex-wrap:wrap; }
+.f-btn {
+  font-size:.58rem; font-weight:500; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--muted); background:none; border:1px solid var(--border);
+  padding:10px 18px; transition:all .35s var(--ease);
+}
+.f-btn.active,.f-btn:hover { background:var(--gold); color:#fff; border-color:var(--gold); }
+
+/* ── Grid ── */
+.p-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:4px; }
+.p-card {
+  position:relative; overflow:hidden; aspect-ratio:4/3;
+  transition:opacity .3s, transform .3s var(--ease);
+}
+.p-card.wide { grid-column:span 2; aspect-ratio:16/9; }
+.p-card img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .9s var(--ease); }
+.p-card:hover img { transform:scale(1.06); }
+.p-ov {
+  position:absolute; inset:0;
+  background:linear-gradient(to top,rgba(26,26,26,.88),transparent 55%);
+  display:flex; flex-direction:column; justify-content:flex-end; padding:24px;
+  opacity:0; transition:opacity .4s var(--ease);
+}
+.p-card:hover .p-ov { opacity:1; }
+.p-cat { font-size:.5rem; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:var(--gold); background:rgba(184,156,126,.15); border:1px solid rgba(184,156,126,.4); padding:5px 10px; display:inline-block; margin-bottom:8px; align-self:flex-start; }
+.p-name { font-family:var(--ff-h); font-size:1.2rem; font-weight:400; color:var(--parchment); margin-bottom:3px; }
+.p-loc { font-size:.72rem; font-weight:300; color:rgba(249,247,242,.5); }
+.p-price { position:absolute; top:16px; right:16px; background:rgba(184,156,126,.9); color:var(--ink); font-size:.5rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; padding:5px 10px; opacity:0; transition:opacity .4s; }
+.p-card:hover .p-price { opacity:1; }
+
+.port-cta { text-align:center; padding-top:72px; }
+.port-cta p { font-family:var(--ff-h); font-size:1.6rem; font-weight:300; font-style:italic; color:var(--muted); margin-bottom:28px; }
+
+@media (max-width:900px) {
+  .p-grid { grid-template-columns:repeat(2,1fr); }
+  .p-card.wide { grid-column:span 2; }
+}
+@media (max-width:580px) {
+  .p-grid { grid-template-columns:1fr; }
+  .p-card.wide { grid-column:span 1; aspect-ratio:4/3; }
+  .p-ov { opacity:1; }
+  .filter-bar { flex-direction:column; align-items:flex-start; }
+}
+</style>
+</head>
+<body>
+<div class="cur-dot"></div><div class="cur-ring"></div>
+<a href="https://wa.me/919876543210" target="_blank" class="wa" aria-label="WhatsApp">
+  <div class="wa-pulse"></div><div class="wa-pulse"></div>
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<div class="mob-menu">
+  <a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a>
+  <a href="about.html">Studio</a><a href="process.html">Process</a><a href="contact.html">Contact</a>
+  <div class="mob-menu-cta"><a href="tel:+919876543210">📞 Call</a><a href="https://wa.me/919876543210" target="_blank">💬 WhatsApp</a></div>
+</div>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Unique Space<span>Design Studio · Pune</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="portfolio.html" class="on">Portfolio</a></li>
+    <li><a href="services.html">Services</a></li><li><a href="about.html">Studio</a></li>
+    <li><a href="process.html">Process</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Start a Project</a>
+  <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="page-hero">
+  <img class="page-hero-img" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1400&q=80&fm=webp" alt="">
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-body">
+    <div class="eyebrow" style="color:var(--gold)">Our Work</div>
+    <h1 class="h1 lgt">Spaces that speak<br><em>louder than words.</em></h1>
+    <p class="lead" style="color:rgba(249,247,242,.5);margin-top:18px;">20+ projects across Pune's finest neighbourhoods.</p>
+  </div>
+</header>
+
+<main>
+  <section class="sec">
+    <div class="wrap">
+      <!-- Filter -->
+      <div class="filter-bar rv">
+        <span class="filter-lbl">Filter by:</span>
+        <div class="filter-btns" role="group">
+          <button class="f-btn active" data-f="all">All</button>
+          <button class="f-btn" data-f="residential">Residential</button>
+          <button class="f-btn" data-f="commercial">Commercial</button>
+          <button class="f-btn" data-f="modular">Modular Kitchen</button>
+          <button class="f-btn" data-f="bedroom">Bedroom</button>
+        </div>
+      </div>
+
+      <!-- Grid -->
+      <div class="p-grid">
+        <article class="p-card wide rv" data-cat="residential">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80&fm=webp" alt="Kapoor Residence – Luxury Villa Living Room, Dhanori" loading="lazy">
+          <div class="p-ov"><span class="p-cat">Residential · Villa</span><div class="p-name">The Kapoor Residence</div><div class="p-loc">4BHK Villa, Dhanori, Pune</div></div>
+          <div class="p-price">₹28L Project</div>
+        </article>
+
+        <article class="p-card rv d1" data-cat="modular">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80&fm=webp" alt="Sharma Kitchen – Modular, Lohegaon" loading="lazy">
+          <div class="p-ov"><span class="p-cat">Modular Kitchen</span><div class="p-name">The Sharma Kitchen</div><div class="p-loc">Lohegaon, Pune</div></div>
+        </article>
+
+        <article class="p-card rv d2" data-cat="commercial">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fm=webp" alt="TechFlow HQ – Office Interior, Viman Nagar" loading="lazy">
+          <div class="p-ov"><span class="p-cat">Commercial · Office</span><div class="p-name">TechFlow HQ</div><div class="p-loc">Viman Nagar, Pune</div></div>
+          <div class="p-price">₹18L Project</div>
+        </article>
+
+        <article class="p-card rv d1" data-cat="bedroom">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80&fm=webp" alt="Mehta Suite – Premium Bedroom, Kalyani Nagar" loading="lazy">
+          <div class="p-ov"><span class="p-cat">Bedroom Suite</span><div class="p-name">The Mehta Suite</div><div class="p-loc">Kalyani Nagar, Pune</div></div>
+        </article>
+
+        <article class="p-card rv d2" data-cat="residential">
+          <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80&fm=webp" alt="Iyer Dining Room, Dhanori" loading="lazy">
+          <div class="p-ov"><span class="p-cat">Residential · Dining</span><div class="p-name">The Iyer Dining Room</div><div class="p-loc">Dhanori, Pune</div></div>
+        </article>
+
+        <article class="p-card rv wide" data-cat="residential">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80&fm=webp" alt="Desai Penthouse – Kalyani Nagar" loading="lazy">
+          <div class="p-ov"><span class="p-cat">Residential · Penthouse</span><div class="p-name">The Desai Penthouse</div><div class="p-loc">Kalyani Nagar, Pune</div></div>
+          <div class="p-price">₹45L Project</div>
+        </article>
+
+        <article class="p-card rv d1" data-cat="modular">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80&fm=webp" alt="Patil Wardrobe – Modular, Lohegaon" loading="lazy">
+          <div class="p-ov"><span class="p-cat">Modular Wardrobe</span><div class="p-name">The Patil Wardrobe</div><div class="p-loc">Lohegaon, Pune</div></div>
+        </article>
+
+        <article class="p-card rv d2" data-cat="commercial">
+          <img src="https://images.unsplash.com/photo-1568992688065-536aad8a12f6?w=800&q=80&fm=webp" alt="Brewed Story Café – Hospitality, Baner" loading="lazy">
+          <div class="p-ov"><span class="p-cat">Commercial · Café</span><div class="p-name">The Brewed Story Café</div><div class="p-loc">Baner, Pune</div></div>
+          <div class="p-price">₹12L Project</div>
+        </article>
+
+        <article class="p-card rv d3" data-cat="bedroom">
+          <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=800&q=80&fm=webp" alt="Joshi Kids Suite, Dhanori" loading="lazy">
+          <div class="p-ov"><span class="p-cat">Kids Room</span><div class="p-name">The Joshi Kids Suite</div><div class="p-loc">Dhanori, Pune</div></div>
+        </article>
+      </div>
+
+      <div class="port-cta rv">
+        <p>"Every space began with a single conversation."</p>
+        <a href="contact.html" class="btn btn-dark"><span>Start Your Project →</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="ft-inner">
+    <div class="ft-grid">
+      <div>
+        <div class="ft-brand">Unique Space<span>Design Studio · Pune</span></div>
+        <p class="ft-tag">Premium luxury interior design across Pune.</p>
+        <div class="ft-soc"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">FB</a><a href="#" aria-label="Pinterest">PT</a></div>
+      </div>
+      <div class="ft-col"><h4>Studio</h4><ul><li><a href="about.html">About Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="services.html">Services</a></li><li><a href="process.html">Process</a></li></ul></div>
+      <div class="ft-col"><h4>Services</h4><ul><li><a href="services.html#residential">Luxury Residential</a></li><li><a href="services.html#commercial">Office Interiors</a></li><li><a href="services.html#turnkey">Turnkey Solutions</a></li><li><a href="services.html#modular">Modular Kitchens</a></li></ul></div>
+      <div class="ft-col"><h4>Contact</h4>
+        <div class="ft-ci"><span class="ft-ci-icon">📍</span><p>Dhanori, Pune – 411015</p></div>
+        <div class="ft-ci"><span class="ft-ci-icon">📞</span><p><a href="tel:+919876543210">+91 98765 43210</a></p></div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <p class="ft-copy">© 2025 Unique Space Design Studio. All rights reserved.</p>
+      <div class="ft-legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Services — Unique Space Design Studio, Pune</title>
+<meta name="description" content="Luxury residential interiors, office transformations, turnkey solutions, modular kitchens and 3D visualization in Pune.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* Intro row */
+.svc-intro { display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:center; margin-bottom:96px; }
+.svc-intro-img { position:relative; height:460px; }
+.svc-intro-img img { width:100%; height:100%; object-fit:cover; display:block; }
+.svc-intro-badge { position:absolute; bottom:-18px; left:-18px; background:var(--gold); padding:20px 22px; }
+.svc-intro-badge b { display:block; font-family:var(--ff-h); font-size:2.2rem; font-weight:400; color:var(--ink); line-height:1; }
+.svc-intro-badge small { font-size:.5rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:rgba(26,26,26,.6); margin-top:3px; display:block; }
+
+/* Service blocks */
+.svc-block {
+  display:grid; grid-template-columns:1fr 1fr; gap:0;
+  border:1px solid var(--border); margin-bottom:4px; overflow:hidden;
+}
+.svc-block:nth-child(even) .svc-block-img { order:-1; }
+.svc-block-img { overflow:hidden; min-height:380px; }
+.svc-block-img img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .9s var(--ease); }
+.svc-block:hover .svc-block-img img { transform:scale(1.04); }
+.svc-block-body { padding:52px 52px; display:flex; flex-direction:column; justify-content:center; }
+.svc-block-num { font-size:.56rem; font-weight:600; letter-spacing:.24em; color:var(--gold); opacity:.7; margin-bottom:14px; }
+.svc-block-h { font-family:var(--ff-h); font-size:clamp(1.8rem,3vw,2.8rem); font-weight:300; letter-spacing:-.01em; color:var(--ink); margin-bottom:16px; line-height:1.15; }
+.svc-block-h em { font-style:italic; color:var(--gold); }
+.svc-block-desc { font-size:.88rem; font-weight:300; line-height:1.9; color:var(--muted); margin-bottom:22px; }
+.svc-features { list-style:none; display:flex; flex-direction:column; gap:9px; margin-bottom:28px; }
+.svc-features li { display:flex; align-items:center; gap:11px; font-size:.84rem; font-weight:400; color:var(--ink); }
+.svc-features li::before { content:''; display:block; width:5px; height:5px; border-radius:50%; background:var(--gold); flex-shrink:0; }
+.svc-price { display:inline-block; font-size:.56rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); border:1px solid rgba(184,156,126,.35); padding:7px 14px; margin-bottom:26px; }
+
+/* Why us */
+.why-wrap { background:var(--ink); padding:100px 0 96px; margin-top:80px; }
+.why-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:rgba(255,255,255,.06); margin-top:56px; }
+.why-item { padding:40px 32px; background:var(--ink); text-align:center; transition:background .3s; }
+.why-item:hover { background:#1e1c19; }
+.why-icon { font-size:2rem; margin-bottom:16px; display:block; }
+.why-h { font-family:var(--ff-h); font-size:1.2rem; font-weight:400; color:var(--parchment); margin-bottom:10px; }
+.why-p { font-size:.8rem; font-weight:300; color:rgba(249,247,242,.38); line-height:1.8; }
+
+@media (max-width:960px) {
+  .svc-intro { grid-template-columns:1fr; gap:48px; }
+  .svc-intro-img { height:320px; }
+  .svc-block { grid-template-columns:1fr; }
+  .svc-block:nth-child(even) .svc-block-img { order:0; }
+  .svc-block-img { min-height:260px; }
+  .svc-block-body { padding:36px 28px; }
+  .why-grid { grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:580px) { .why-grid { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="cur-dot"></div><div class="cur-ring"></div>
+<a href="https://wa.me/919876543210" target="_blank" class="wa" aria-label="WhatsApp">
+  <div class="wa-pulse"></div><div class="wa-pulse"></div>
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<div class="mob-menu">
+  <a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a>
+  <a href="about.html">Studio</a><a href="process.html">Process</a><a href="contact.html">Contact</a>
+  <div class="mob-menu-cta"><a href="tel:+919876543210">📞 Call</a><a href="https://wa.me/919876543210" target="_blank">💬 WhatsApp</a></div>
+</div>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Unique Space<span>Design Studio · Pune</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="services.html" class="on">Services</a></li><li><a href="about.html">Studio</a></li>
+    <li><a href="process.html">Process</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Start a Project</a>
+  <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="page-hero">
+  <img class="page-hero-img" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1400&q=80&fm=webp" alt="">
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-body">
+    <div class="eyebrow" style="color:var(--gold)">What We Offer</div>
+    <h1 class="h1 lgt">Services crafted<br>for <em>exceptional living.</em></h1>
+  </div>
+</header>
+
+<main>
+  <section class="sec">
+    <div class="wrap">
+      <div class="svc-intro">
+        <div>
+          <div class="eyebrow rv">Our Expertise</div>
+          <h2 class="h2 rv d1">We don't sell services.<br>We craft <em>experiences.</em></h2>
+          <div class="gold-bar rv d2"></div>
+          <p class="lead rv d2">From a single room refresh to a complete turnkey transformation — every service is designed around your lifestyle and the way you want to feel at home.</p>
+          <a href="contact.html" class="btn btn-dark rv d3" style="margin-top:28px;"><span>Book Free Consultation</span></a>
+        </div>
+        <div class="svc-intro-img rv d1">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80&fm=webp" alt="Luxury interior by Unique Space Studio" loading="lazy">
+          <div class="svc-intro-badge"><b>20+</b><small>Spaces Transformed</small></div>
+        </div>
+      </div>
+
+      <!-- Service Blocks -->
+      <div class="svc-block rv" id="residential">
+        <div class="svc-block-img"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=80&fm=webp" alt="Luxury Residential Interior Pune" loading="lazy"></div>
+        <div class="svc-block-body">
+          <div class="svc-block-num">01 — Residential</div>
+          <h2 class="svc-block-h">Luxury <em>Residential</em> Interiors</h2>
+          <p class="svc-block-desc">Premium home interiors for villas, penthouses and apartments. Every texture, every light, every corner curated with obsessive attention to detail.</p>
+          <ul class="svc-features"><li>Full home interior design & styling</li><li>Premium Italian & domestic materials</li><li>Custom furniture & upholstery sourcing</li><li>Lighting design & smart home integration</li></ul>
+          <span class="svc-price">Starting ₹8L for 2BHK</span>
+          <a href="contact.html" class="btn btn-dark"><span>Enquire Now</span></a>
+        </div>
+      </div>
+
+      <div class="svc-block rv" id="commercial">
+        <div class="svc-block-img"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80&fm=webp" alt="Commercial Office Interior Pune" loading="lazy"></div>
+        <div class="svc-block-body">
+          <div class="svc-block-num">02 — Commercial</div>
+          <h2 class="svc-block-h">Modern <em>Office</em> Transformations</h2>
+          <p class="svc-block-desc">Your office speaks before you do. We design spaces for IT companies, law firms and boutiques that inspire teams, impress clients and reflect your brand.</p>
+          <ul class="svc-features"><li>Brand-aligned workspace design</li><li>Ergonomic & productivity-focused layouts</li><li>Reception & client-facing area design</li><li>Café, hospitality & retail interiors</li></ul>
+          <span class="svc-price">Starting ₹5L for 1000 sqft</span>
+          <a href="contact.html" class="btn btn-dark"><span>Enquire Now</span></a>
+        </div>
+      </div>
+
+      <div class="svc-block rv" id="turnkey">
+        <div class="svc-block-img"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80&fm=webp" alt="Turnkey Interior Solution Pune" loading="lazy"></div>
+        <div class="svc-block-body">
+          <div class="svc-block-num">03 — Turnkey</div>
+          <h2 class="svc-block-h">Complete <em>Turnkey</em> Solutions</h2>
+          <p class="svc-block-desc">You hand us the keys. We hand them back with your dream space inside. Full end-to-end project management — design, procurement, execution and handover.</p>
+          <ul class="svc-features"><li>Single point of contact throughout</li><li>Timeline commitment with weekly updates</li><li>Vendor coordination & quality checks</li><li>Post-handover support (90 days)</li></ul>
+          <span class="svc-price">Most Popular · Zero Surprises</span>
+          <a href="contact.html" class="btn btn-dark"><span>Book Discovery Call</span></a>
+        </div>
+      </div>
+
+      <div class="svc-block rv" id="modular">
+        <div class="svc-block-img"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80&fm=webp" alt="Modular Kitchen Design Pune" loading="lazy"></div>
+        <div class="svc-block-body">
+          <div class="svc-block-num">04 — Modular</div>
+          <h2 class="svc-block-h">Modular <em>Kitchens</em> & Wardrobes</h2>
+          <p class="svc-block-desc">German-engineered cabinet systems with Italian hardware and custom lacquered finishes. Kitchens that are as functional as they are photograph-worthy.</p>
+          <ul class="svc-features"><li>Hettich & Blum hardware</li><li>Acrylic, PU & membrane finishes</li><li>Quartz, Marble & Granite countertops</li><li>Custom modular wardrobes with soft-close</li></ul>
+          <span class="svc-price">Starting ₹1.8L for 10ft kitchen</span>
+          <a href="contact.html" class="btn btn-dark"><span>Enquire Now</span></a>
+        </div>
+      </div>
+
+      <div class="svc-block rv" id="3d">
+        <div class="svc-block-img"><img src="https://images.unsplash.com/photo-1634973357973-f2ed2657db3c?w=900&q=80&fm=webp" alt="3D Visualization Interior Design" loading="lazy"></div>
+        <div class="svc-block-body">
+          <div class="svc-block-num">05 — Visualization</div>
+          <h2 class="svc-block-h">Photorealistic <em>3D</em> Visualization</h2>
+          <p class="svc-block-desc">See your space before a single tile is laid. Our photorealistic renders eliminate guesswork — approve materials, colours and layouts with complete confidence.</p>
+          <ul class="svc-features"><li>Photorealistic room renders (4K quality)</li><li>360° virtual walkthroughs</li><li>2 free revision rounds included</li><li>Standalone or bundled with full design</li></ul>
+          <span class="svc-price">Starting ₹8,000 per room</span>
+          <a href="contact.html" class="btn btn-dark"><span>Request Renders</span></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Why Us -->
+  <div class="why-wrap">
+    <div class="wrap">
+      <div class="eyebrow rv" style="color:var(--gold)">Why Unique Space</div>
+      <h2 class="h2 lgt rv d1">What makes us <em>different.</em></h2>
+      <div class="why-grid">
+        <div class="why-item rv"><span class="why-icon">🏆</span><div class="why-h">8+ Years in Pune</div><p class="why-p">Deep local knowledge of suppliers, contractors and material vendors across Pune's market.</p></div>
+        <div class="why-item rv d1"><span class="why-icon">🎯</span><div class="why-h">On-Time Delivery</div><p class="why-p">We commit to timelines and keep them. Weekly updates and dedicated site managers on every project.</p></div>
+        <div class="why-item rv d2"><span class="why-icon">💎</span><div class="why-h">Premium Materials Only</div><p class="why-p">We never compromise. Only branded hardware, certified lumber and Grade-A finishes make it in.</p></div>
+        <div class="why-item rv d3"><span class="why-icon">🔒</span><div class="why-h">Price Transparency</div><p class="why-p">Fixed-quote contracts with no hidden costs. What we quote at discovery is what you pay.</p></div>
+      </div>
+    </div>
+  </div>
+
+<footer>
+  <div class="ft-inner">
+    <div class="ft-grid">
+      <div><div class="ft-brand">Unique Space<span>Design Studio · Pune</span></div><p class="ft-tag">Premium luxury interior design across Pune.</p><div class="ft-soc"><a href="#">IG</a><a href="#">FB</a><a href="#">PT</a></div></div>
+      <div class="ft-col"><h4>Studio</h4><ul><li><a href="about.html">About Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="services.html">Services</a></li><li><a href="process.html">Process</a></li></ul></div>
+      <div class="ft-col"><h4>Services</h4><ul><li><a href="#residential">Luxury Residential</a></li><li><a href="#commercial">Office Interiors</a></li><li><a href="#turnkey">Turnkey Solutions</a></li><li><a href="#modular">Modular Kitchens</a></li></ul></div>
+      <div class="ft-col"><h4>Contact</h4>
+        <div class="ft-ci"><span class="ft-ci-icon">📍</span><p>Dhanori, Pune – 411015</p></div>
+        <div class="ft-ci"><span class="ft-ci-icon">📞</span><p><a href="tel:+919876543210">+91 98765 43210</a></p></div>
+      </div>
+    </div>
+    <div class="ft-bottom"><p class="ft-copy">© 2025 Unique Space Design Studio. All rights reserved.</p><div class="ft-legal"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

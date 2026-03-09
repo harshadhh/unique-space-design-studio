@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>About — Unique Space Design Studio, Pune</title>
+<meta name="description" content="The story behind Unique Space Design Studio — Pune's premium luxury interior design studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* Story */
+.story-grid { display:grid; grid-template-columns:1fr 1.1fr; gap:72px; align-items:center; margin-bottom:112px; }
+.story-imgs { display:grid; grid-template-columns:1fr 1fr; gap:4px; }
+.story-imgs .si { overflow:hidden; }
+.story-imgs .si:first-child { grid-column:span 2; height:300px; }
+.story-imgs .si:not(:first-child) { height:180px; }
+.story-imgs .si img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .9s var(--ease); }
+.story-imgs .si:hover img { transform:scale(1.05); }
+
+/* Values */
+.vals-wrap { background:#f2f0eb; padding:100px 0; }
+.vals-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:4px; margin-top:52px; }
+.val { background:var(--parchment); padding:40px 32px; border:1px solid var(--border); transition:transform .4s var(--ease), box-shadow .4s; }
+.val:hover { transform:translateY(-6px); box-shadow:0 20px 48px rgba(184,156,126,.1); }
+.val-num { font-family:var(--ff-h); font-size:3.5rem; font-weight:300; color:var(--gold); opacity:.22; line-height:1; margin-bottom:10px; }
+.val-h { font-family:var(--ff-h); font-size:1.3rem; font-weight:400; color:var(--ink); margin-bottom:10px; }
+.val-p { font-size:.84rem; font-weight:300; line-height:1.85; color:var(--muted); }
+
+/* Team */
+.team-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:4px; margin-top:52px; }
+.team-card { }
+.team-card img { width:100%; aspect-ratio:3/4; object-fit:cover; display:block; filter:grayscale(15%); transition:filter .5s, transform .8s var(--ease); }
+.team-card:hover img { filter:grayscale(0); transform:scale(1.03); }
+.team-info { padding:18px 0 0; }
+.team-name { font-family:var(--ff-h); font-size:1.3rem; font-weight:400; color:var(--ink); margin-bottom:3px; }
+.team-role { font-size:.58rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); }
+.team-bio { font-size:.82rem; font-weight:300; line-height:1.8; color:var(--muted); margin-top:8px; }
+
+/* Trust */
+.trust-wrap { background:var(--ink); padding:88px 0; }
+.trust-items { display:flex; justify-content:center; flex-wrap:wrap; gap:52px; margin-top:52px; }
+.ti { text-align:center; }
+.ti-icon { font-size:2.2rem; margin-bottom:10px; display:block; }
+.ti-val { font-family:var(--ff-h); font-size:2.8rem; font-weight:300; color:var(--gold); display:block; line-height:1; }
+.ti-lbl { font-size:.56rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:rgba(249,247,242,.35); margin-top:6px; display:block; }
+
+@media (max-width:900px) {
+  .story-grid { grid-template-columns:1fr; gap:44px; }
+  .vals-grid { grid-template-columns:1fr; }
+  .team-grid { grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:560px) { .team-grid { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="cur-dot"></div><div class="cur-ring"></div>
+<a href="https://wa.me/919876543210" target="_blank" class="wa" aria-label="WhatsApp">
+  <div class="wa-pulse"></div><div class="wa-pulse"></div>
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<div class="mob-menu">
+  <a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a>
+  <a href="about.html">Studio</a><a href="process.html">Process</a><a href="contact.html">Contact</a>
+  <div class="mob-menu-cta"><a href="tel:+919876543210">📞 Call</a><a href="https://wa.me/919876543210" target="_blank">💬 WhatsApp</a></div>
+</div>
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Unique Space<span>Design Studio · Pune</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="services.html">Services</a></li><li><a href="about.html" class="on">Studio</a></li>
+    <li><a href="process.html">Process</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Start a Project</a>
+  <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="page-hero">
+  <img class="page-hero-img" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1400&q=80&fm=webp" alt="">
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-body">
+    <div class="eyebrow" style="color:var(--gold)">Our Story</div>
+    <h1 class="h1 lgt">Born in Pune.<br>Built on <em>obsessive craft.</em></h1>
+  </div>
+</header>
+
+<main>
+  <section class="sec">
+    <div class="wrap">
+      <div class="story-grid">
+        <div class="story-imgs rv">
+          <div class="si"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80&fm=webp" alt="Unique Space project" loading="lazy"></div>
+          <div class="si"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80&fm=webp" alt="Interior design consultation" loading="lazy"></div>
+          <div class="si"><img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&q=80&fm=webp" alt="Premium bedroom design" loading="lazy"></div>
+        </div>
+        <div>
+          <div class="eyebrow rv">Who We Are</div>
+          <h2 class="h2 rv d1">A studio that refuses<br>to be <em>ordinary.</em></h2>
+          <div class="gold-bar rv d2"></div>
+          <p class="lead rv d2">Unique Space was founded with one conviction: every space deserves to be extraordinary. Not just beautiful — intentional.</p>
+          <p class="lead rv d3" style="margin-top:14px;">We started in Dhanori, one of Pune's fastest-growing communities of IT professionals and entrepreneurs. We've been part of this neighbourhood's transformation for over 8 years.</p>
+          <a href="contact.html" class="btn btn-dark rv d4" style="margin-top:32px;"><span>Start Your Project →</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="vals-wrap">
+    <div class="wrap">
+      <div class="eyebrow rv" style="justify-content:center;">What We Stand For</div>
+      <h2 class="h2 rv d1" style="text-align:center;">Our design philosophy<br>in three <em>principles.</em></h2>
+      <div class="vals-grid">
+        <div class="val rv"><div class="val-num">01</div><div class="val-h">Function First</div><p class="val-p">Beautiful spaces that don't work are expensive mistakes. Every design decision begins with how you actually live and move through a space.</p></div>
+        <div class="val rv d1"><div class="val-num">02</div><div class="val-h">Material Honesty</div><p class="val-p">We use materials for what they are. Marble looks like marble. Wood feels like wood. Authenticity is a luxury in itself.</p></div>
+        <div class="val rv d2"><div class="val-num">03</div><div class="val-h">Client as Co-Creator</div><p class="val-p">Your story is the brief. We listen deeply, propose boldly and refine collaboratively. The result is always yours — elevated by our craft.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="eyebrow rv" style="justify-content:center;">The People Behind the Spaces</div>
+      <h2 class="h2 rv d1" style="text-align:center;">Meet the <em>team.</em></h2>
+      <div class="team-grid">
+        <div class="team-card rv">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80&fm=webp" alt="Aryan Mehta – Founder & Lead Designer" loading="lazy">
+          <div class="team-info"><div class="team-name">Aryan Mehta</div><div class="team-role">Founder & Lead Designer</div><p class="team-bio">8+ years crafting luxury interiors across Pune. Specialises in residential transformations and hospitality design.</p></div>
+        </div>
+        <div class="team-card rv d1">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80&fm=webp" alt="Priya Deshpande – Senior Interior Designer" loading="lazy">
+          <div class="team-info"><div class="team-name">Priya Deshpande</div><div class="team-role">Senior Interior Designer</div><p class="team-bio">Expert in commercial spaces and modular solutions. Sharp eye for spatial planning and material selection.</p></div>
+        </div>
+        <div class="team-card rv d2">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80&fm=webp" alt="Rohan Kulkarni – Head of Execution" loading="lazy">
+          <div class="team-info"><div class="team-name">Rohan Kulkarni</div><div class="team-role">Head of Project Execution</div><p class="team-bio">Ensures every project is delivered on time and on budget. Your single contact from concept to handover.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust-wrap">
+    <div class="wrap">
+      <div class="eyebrow rv" style="color:var(--gold);justify-content:center;">By the Numbers</div>
+      <h2 class="h2 lgt rv d1" style="text-align:center;">8 years of <em>trust</em>,<br>built one space at a time.</h2>
+      <div class="trust-items">
+        <div class="ti rv"><span class="ti-icon">🏆</span><span class="ti-val" data-counter data-target="20" data-suf="+">0+</span><span class="ti-lbl">Projects Completed</span></div>
+        <div class="ti rv d1"><span class="ti-icon">⭐</span><span class="ti-val">5.0</span><span class="ti-lbl">Google Rating</span></div>
+        <div class="ti rv d2"><span class="ti-icon">📍</span><span class="ti-val" data-counter data-target="15" data-suf="+">0+</span><span class="ti-lbl">Localities Served</span></div>
+        <div class="ti rv d3"><span class="ti-icon">🔑</span><span class="ti-val" data-counter data-target="100" data-suf="%">0%</span><span class="ti-lbl">On-Time Delivery</span></div>
+      </div>
+      <div style="text-align:center;margin-top:52px;" class="rv d4">
+        <a href="contact.html" class="btn btn-line-lt"><span>Work With Us →</span></a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="ft-inner">
+    <div class="ft-grid">
+      <div><div class="ft-brand">Unique Space<span>Design Studio · Pune</span></div><p class="ft-tag">Premium luxury interior design across Pune.</p><div class="ft-soc"><a href="#">IG</a><a href="#">FB</a><a href="#">PT</a></div></div>
+      <div class="ft-col"><h4>Studio</h4><ul><li><a href="about.html">About Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="services.html">Services</a></li><li><a href="process.html">Process</a></li></ul></div>
+      <div class="ft-col"><h4>Services</h4><ul><li><a href="services.html#residential">Luxury Residential</a></li><li><a href="services.html#commercial">Office Interiors</a></li><li><a href="services.html#turnkey">Turnkey Solutions</a></li><li><a href="services.html#modular">Modular Kitchens</a></li></ul></div>
+      <div class="ft-col"><h4>Contact</h4>
+        <div class="ft-ci"><span class="ft-ci-icon">📍</span><p>Dhanori, Pune – 411015</p></div>
+        <div class="ft-ci"><span class="ft-ci-icon">📞</span><p><a href="tel:+919876543210">+91 98765 43210</a></p></div>
+      </div>
+    </div>
+    <div class="ft-bottom"><p class="ft-copy">© 2025 Unique Space Design Studio. All rights reserved.</p><div class="ft-legal"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
