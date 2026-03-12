@@ -70,6 +70,23 @@ body.cur-grow .cur-ring { width:72px; height:72px; opacity:.15; background:var(-
   backdrop-filter:blur(18px);
   box-shadow:0 1px 0 var(--border);
 }
+/* ── Scrolled: always dark ink, regardless of .lgt ── */
+.nav.stuck .nav-logo,
+.nav.stuck .nav-logo.lgt         { color: var(--ink); }
+.nav.stuck .nav-logo span,
+.nav.stuck .nav-logo.lgt span    { color: var(--gold); }
+.nav.stuck .nav-links a,
+.nav.stuck .nav-links a.lgt      { color: var(--ink); }
+.nav.stuck .nav-links a:hover,
+.nav.stuck .nav-links a.on       { color: var(--gold); }
+.nav.stuck .burger span,
+.nav.stuck .burger.lgt span      { background: var(--ink); }
+
+/* ── Top of page on dark-hero inner pages: force white nav ── */
+body:has(.page-hero) .nav:not(.stuck) .nav-links a   { color: rgba(249,247,242,.8); }
+body:has(.page-hero) .nav:not(.stuck) .nav-logo      { color: var(--parchment); }
+body:has(.page-hero) .nav:not(.stuck) .nav-logo span { color: var(--gold-lt); }
+body:has(.page-hero) .nav:not(.stuck) .burger span   { background: var(--parchment); }
 .nav-logo {
   font-family:var(--ff-h); font-size:1.3rem; font-weight:500;
   letter-spacing:.05em; line-height:1.1;
